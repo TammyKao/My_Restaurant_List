@@ -1,5 +1,5 @@
 # My Restaurant List
-![Screenshot of My Restaurant List](./public/image/My%20Restaurant%20List.JPG)
+![Screenshot of My Restaurant List](./public/image/My_Restaurant_List.JPG)
 
 ## Intro 
 此專案為: My Restaurant List 我的餐廳清單，可以查詢、瀏覽喜愛的餐廳資訊。
