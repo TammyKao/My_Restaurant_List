@@ -32,7 +32,7 @@ npm run start
 
 5. 看到以下訊息代表順利完成，用瀏覽器打開以下網址:
 ```
-Listening on [http://localhost:3000](http://localhost:3000)
+Listening on http://localhost:3000
 ```
 
 6. 若欲暫停:
