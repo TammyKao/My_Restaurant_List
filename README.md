@@ -17,17 +17,24 @@
 
 ##  Quick Start
 1. 安裝 node.js 與 npm
+
 2. 將專案 clone 到本地
+
 3. 本地開啟後，由終端機進入資料夾，輸入:
 ```
 npm install
 ```
+
 4. 安裝完成後輸入:
 ```
 npm run start
 ```
+
 5. 看到以下訊息代表順利完成，用瀏覽器打開以下網址:
-     Listening on [http://localhost:3000](http://localhost:3000)
+```
+Listening on [http://localhost:3000](http://localhost:3000)
+```
+
 6. 若欲暫停:
 ```
 ctrl + c
