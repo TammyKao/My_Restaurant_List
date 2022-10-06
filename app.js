@@ -17,27 +17,24 @@ app.set('view engine', 'handlebars')
 app.use(express.static('public'))
 
 // routes setting
-
 app.get('/', (req, res) => {
   // past the restaurant data into 'index' partial template
   res.render('index', { restaurant: restaurantList.results })
 })
 
 app.get('/search', (req, res) => {
-  const keyword = req.query.keyword
-  const restaurant = restaurantList.results.filter(restaurant => {
-    return restaurant.name.toLowerCase().includes(keyword.toLowerCase().trim()) || restaurant.category.includes(keyword.toLowerCase().trim())
+  const keyword = req.query.keyword.toLowerCase().trim()
+  const filteredRestaurant = restaurantList.results.filter(restaurant => {
+    return restaurant.name.toLowerCase().includes(keyword) || restaurant.category.includes(keyword)
   })
-  res.render('index', { restaurant: restaurant, keyword: keyword })
+  res.render('index', { restaurant: filteredRestaurant, keyword })
 })
 
 
 
 app.get('/restaurants/:restaurant_id', (req, res) => {
-
-
   const restaurant = restaurantList.results.find(restaurant => restaurant.id.toString() === req.params.restaurant_id)
-  res.render('show', { restaurant: restaurant })
+  res.render('show', { restaurant })
 })
 
 
